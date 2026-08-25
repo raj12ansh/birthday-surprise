@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Birthday Surprise 🎁</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page">
+        <div class="cats">🐱🎈🐱🎈🐱</div>
+
+        <h1 id="question">I have a special birthday gift for you... 🎁</h1>
+        <p>Do you want to see it? 👀✨</p>
+
+        <div class="buttons">
+            <button class="yes" onclick="showGift()">YES! 😍🎁</button>
+            <button class="no" id="noBtn">No 🙈</button>
+        </div>
+
+        <div class="decorations">🎀 🐾 🎈 🐾 🎀</div>
+    </div>
+
+    <script>
+        document.getElementById("noBtn").addEventListener("mouseover", function() {
+            let x = Math.random() * (window.innerWidth - 150);
+            let y = Math.random() * (window.innerHeight - 100);
+
+            this.style.position = "absolute";
+            this.style.left = x + "px";
+            this.style.top = y + "px";
+        });
+
+        function showGift() {
+            window.location.href = "birthday.html";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! 🎂</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page birthday-page">
+
+        <div class="balloons">🎈 🎈 🎈 🎈 🎈</div>
+
+        <div class="cats">🐱 🎂 🐱</div>
+
+        <h1>🎉 HAPPY BIRTHDAY! 🎉</h1>
+
+        <h2 id="birthdayName"></h2>
+
+        <div class="cake">🎂</div>
+
+        <p class="wish">
+            Wishing you a day filled with happiness, laughter,
+            love and lots of beautiful memories! 💖✨<br><br>
+            May your year ahead be as amazing and special as you are! 🥳🎀
+        </p>
+
+        <div class="decorations">
+            🐾 🎁 🎈 💖 🎂 💖 🎈 🎁 🐾
+        </div>
+
+        <p class="final">This little website is your birthday gift 🎁💌</p>
+
+    </div>
+
+    <script>
+        let name = localStorage.getItem("birthdayName");
+        document.getElementById("birthdayName").innerHTML =
+            "For " + name + " 💖";
+    </script>
+
+</body>
+</html>

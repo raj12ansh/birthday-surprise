@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Surprise 🎁</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page">
+        <div class="cats">🐱 🎈 🐱</div>
+        
+        <h1>Hey, Beautiful! ✨</h1>
+        <p>Before we begin, tell me your name 💌</p>
+
+        <input type="text" id="nameInput" placeholder="Enter your name...">
+        <button onclick="startSurprise()">Continue 🎀</button>
+
+        <div class="decorations">🎈 🐾 🎂 🐾 🎈</div>
+    </div>
+
+    <script>
+        function startSurprise() {
+            let name = document.getElementById("nameInput").value;
+
+            if (name.trim() === "") {
+                alert("You have to tell me your name first! 🥺🐱");
+            } else {
+                localStorage.setItem("birthdayName", name);
+                window.location.href = "surprise.html";
+            }
+        }
+    </script>
+
+</body>
+</html>
